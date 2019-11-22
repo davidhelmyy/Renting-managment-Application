@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="40dp"
+        android:paddingBottom="20dp"
+        >
+
+
+        <TableRow>
+
+
+            <ImageButton
+                android:id="@+id/create_new_checkbox_note"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="?android:attr/selectableItemBackground"
+                android:src="@drawable/baseline_arrow_back_ios_24"
+                android:layout_marginStart="30dp"
+
+
+                />
+
+
+
+
+        </TableRow>
+
+    </TableLayout>
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:textSize="20dp"
+       android:text="Choose Owner"/>
+
+    <Spinner
+        android:id="@+id/spinner_owner"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+
+
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:text="Choose Renter"/>
+
+    <Spinner
+        android:id="@+id/spinner_renter"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+
+        />
+
+
+    <EditText
+        android:id="@+id/edit_text_landname"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:hint="Land Name"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+
+        />
+
+    <EditText
+        android:id="@+id/edit_text_landSize"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:hint="Size"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:inputType="numberDecimal"
+        />
+
+    <EditText
+        android:id="@+id/edit_text_landPrice"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:hint=" Rent Price"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:inputType="number"
+        />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:text="Add"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="5dp"
+        android:onClick="assign"
+        />
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Payment"
+        android:textSize="30dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        />
+
+
+
+
+    <Spinner
+        android:id="@+id/display_name"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+       android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/transparent"
+        android:layout_gravity="center">
+
+
+
+        <CheckBox
+            android:id="@+id/check_renter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Renter"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:onClick="renterChecked"
+
+            />
+
+
+        <CheckBox
+            android:id="@+id/check_owner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Owner"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:onClick="OwnerChecked"
+
+            />
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        >
+
+        <ListView
+            android:id="@+id/list_moneyNow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+
+            >
+
+
+
+        </ListView>
+
+    </ScrollView>
+
+
+
+
+    <EditText
+        android:id="@+id/add_money"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:hint="Enter money here"
+        android:gravity="center"
+        android:inputType="number"
+        />
+
+
+
+    <EditText
+        android:id="@+id/add_comment"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:hint="Enter comment here"
+        android:gravity="center"
+        android:inputType="text"
+        />
+
+
+    <EditText
+        android:id="@+id/add_date"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:hint="Enter date here"
+        android:gravity="center"
+        android:inputType="date"
+        />
+
+
+    <Button
+        android:id="@+id/add_payment"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:textSize="15dp"
+        android:text="Add payment"
+        android:layout_marginTop="5dp"
+        android:onClick="startAdding"
+
+        />
+
+</LinearLayout>

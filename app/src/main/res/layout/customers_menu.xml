@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+  >
+
+
+    <Button
+        android:id="@+id/btn_customer"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:minWidth="170dp"
+        android:onClick="Scenes"
+        android:text="Add Customers"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+
+
+        />
+
+    <Button
+        android:id="@+id/btn_renter"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:minWidth="170dp"
+        android:onClick="Scenes"
+        android:text="Add Renter"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+         />
+
+    <Button
+        android:id="@+id/btn_lands"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:onClick="Scenes"
+        android:text="Assign Lands"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        />
+
+    <Button
+        android:id="@+id/btn_addPayment"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:onClick="Scenes"
+        android:text="Add Payment"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        />
+
+</LinearLayout>

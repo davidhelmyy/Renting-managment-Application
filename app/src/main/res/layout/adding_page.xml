@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        >
+
+
+        <TableRow>
+
+
+            <ImageButton
+                android:id="@+id/create_new_checkbox_note"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="?android:attr/selectableItemBackground"
+                android:src="@drawable/baseline_arrow_back_ios_24"
+                android:layout_marginStart="30dp"
+
+
+                />
+
+
+
+
+        </TableRow>
+
+
+    </TableLayout>
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add new Contacts"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <com.example.calculationsystem.Containers.UnScrollableListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:paddingTop="30dp"
+            android:paddingBottom="30dp"
+
+
+            />
+
+
+    </ScrollView>
+
+    <EditText
+        android:id="@+id/customer_name"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="Name here"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp"
+
+
+        />
+
+
+
+
+<Button
+    android:id="@+id/add_customer"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Add To Contacts"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:onClick="add"
+
+
+
+    />
+
+
+</LinearLayout>
